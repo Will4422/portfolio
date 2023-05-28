@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, * {
+  user-select: auto;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #f3ebe9;
+  /* give bottom shadow to navbar */
+  -webkit-box-shadow: 0px 7px 20px -5px rgba(58, 58, 58, 0.75);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: sticky;
+  top: 0px;
+  padding: 0.5em
+}
+
+.nav-row{
+  z-index: 1;
+  display: flex;
+  justify-content: left;
+}
+
+.nav-bar-item {
+  margin: 1%;
+  padding: 0.5%;
+  border: 1px solid black;
+}
+
+body {
+  height: 100%;
+  background: linear-gradient(135deg, #FFC300, #FF5733, #C70039, #900C3F);
+  /* background: linear-gradient(90deg,#e52e71,#ff8a00); */
+}
+
+.my-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background: #f3ebe9;
+  margin-top: 20vh;
+  max-width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  /* give it shadows around the whole div to lift it from the background */
+  -webkit-box-shadow: 0px 7px 20px -5px rgba(58, 58, 58, 0.75);
+}
+
+.my-intro h2{
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.my-intro h1{
+  font-size: 5vw;
+  font-weight: 600;
+}
+
+.initial-content{
+  margin-top: 20vh;
+  background: #f3ebe9;
+  height: auto;
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+}
+
+.inset-shadow-top-and-bot {
+  -webkit-box-shadow: inset 0px 30px 20px -25px rgba(58, 58, 58, 0.75),
+                      inset 0px -30px 20px -25px rgba(58, 58, 58, 0.75);
+}
+
+.img-container {
+  flex: 1; /* Grow to fill available space */
+  padding: 1em;
+  /* align image to rightmost end of the div */
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.first-SVG{
+  width: 100%;
+  height: auto;
+}
+
+.text-container{
+  flex: 1;
+  padding: 1em;
+}
+
+.prof-section {
+  height: auto;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.row{
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.card-container {
+  background: #f3ebe9;
+  max-width: 15vw;
+  max-height: auto;
+  padding: 2.3em;
+  margin: 5em;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 7px 20px -5px rgba(58, 58, 58, 0.75);
+  transition: transform 330ms ease-in-out;
+}
+
+.card-container:hover {
+  transform: scale(1.1);
+  z-index: -1;
+  -webkit-box-shadow: 0px 15px 30px 2px rgba(58, 58, 58, 0.75);
+
+}
+
+.card-container h3{
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.card-logo {
+  width: max-content;
+  max-height: auto;
+  margin-top: 0.5em;
+}
+
+footer{
+  background: #f3ebe9;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  /* give it shadows around the whole div to lift it from the background */
+  -webkit-box-shadow: 0px 7px 20px -5px rgba(58, 58, 58, 0.75);
+}
