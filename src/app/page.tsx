@@ -51,14 +51,22 @@ export default function Home() {
         </div>
       </div>
       <div className="initial-content inset-shadow-top-and-bot">
-        <div className='text-container'>
-          <h1>About Me</h1> 
-          {/* TODO: Write this */}
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <div className='col-1'>
+          <div className='text-container'>
+            <h1>About Me</h1> 
+            {/* TODO: Write this */}
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          </div>
+          <div className='about-me-buttons-section'>
+            <a className='about-me-button' href = "mailto: will@oxtoby.ca">Email Me</a>
+            <a className='about-me-button' href="https://drive.google.com/file/d/1oCiw0J_IdLpzFYVKbHoXbFHF3M06l-fd/view?usp=share_link" download="oxtoby-resume">Download Resume</a>
+          </div>
         </div>
+        <div className='col-2'>
         <div className='img-container'>
           <Image src={svgIMG} alt='person using computer' className='first-SVG'/>
         </div>
+        </div>        
       </div>
       <div className='prof-section'>
         {/* TODO: make title pretty */}
