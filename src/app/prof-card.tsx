@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function ProfCard(props: {title: string, source: string, altText: string, link: string, id: string}) {
     return (
