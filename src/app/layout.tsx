@@ -28,7 +28,7 @@ export default function RootLayout({
             <Link href="/" className='nav-bar-item'><h1>Home</h1></Link>
             <Link href="/resume" className='nav-bar-item'><h1>Resume</h1></Link>
             <Link href="/projects" className='nav-bar-item'><h1>Projects</h1></Link>
-            <Link href="/contact" className='nav-bar-item'><h1>Contact</h1></Link>
+            <Link href="/#about-me-buttons" className='nav-bar-item'><h1>Contact</h1></Link>
           </div>
         </nav>
         {children}
@@ -50,7 +50,7 @@ export default function RootLayout({
                   <Image src={codeSVG} alt='code symbol'></Image><h1>Projects</h1>
                 </div>
               </Link>
-              <Link href="/contact">
+              <Link href="/#about-me-buttons">
                 <div className='footer-item'>
                   <Image src={mailSVG} alt='mail'></Image><h1>Contact</h1>
                 </div>
