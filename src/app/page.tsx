@@ -50,7 +50,7 @@ export default function Home() {
           <AppLink href="#" src={IndeedIcon} alt="Indeed Logo"/>
         </div>
       </div>
-      <div className="initial-content inset-shadow-top-and-bot">
+      <div className="initial-content inset-shadow-top-and-bot" id='about-me-buttons'>
         <div className='col-1'>
           <div className='text-container'>
             <h1>About Me</h1> 
